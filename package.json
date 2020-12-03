@@ -1,0 +1,39 @@
+{
+  "name": "within-canada",
+  "version": "1.0.0",
+  "description": "Check if a Lat/Lng Coordinate is within a specific Canadian Province or Territory",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humphd/within-canada.git"
+  },
+  "keywords": [],
+  "author": "David Humphrey",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/humphd/within-canada/issues"
+  },
+  "homepage": "https://github.com/humphd/within-canada#readme",
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "jest": "^26.6.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.29.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@turf/boolean-point-in-polygon": "^6.0.1",
+    "@turf/helpers": "^6.1.4",
+    "@turf/invariant": "^6.1.2"
+  }
+}
